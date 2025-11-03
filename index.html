@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amira Dif - Ingénieure Traitement Signal & Image</title>
-    <!-- Chargement de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Police Google Font (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -22,13 +20,8 @@
       }
     </script>
     <style>
-        /* Ajout d'un style pour le fond de l'en-tête */
         .hero-bg {
-            /* IMPORTANT: 
-              Remplacez 'cover-image.jpg' par le nom du fichier que vous téléversez sur GitHub.
-              (par ex: 'Gemini_Generated_Image_...jpg' renommé en 'cover.jpg')
-            */
-            background-image: url('cover.png');
+            background-image: url('cover.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -36,18 +29,15 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- ========== BARRE DE NAVIGATION ========== -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <!-- Logo / Nom -->
             <a href="#" class="text-2xl font-bold text-blue-800">Amira Dif</a>
             
-            <!-- Liens de navigation -->
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#profil" class="font-medium text-gray-600 hover:text-blue-800 transition duration-150">Profil</a>
                 <a href="#projets" class="font-medium text-gray-600 hover:text-blue-800 transition duration-150">Projets</a>
                 <a href="#competences" class="font-medium text-gray-600 hover:text-blue-800 transition duration-150">Compétences</a>
-                <!-- Liens Sociaux (Icônes) -->
+                <a href="#contact" class="font-medium text-gray-600 hover:text-blue-800 transition duration-150">Contact</a>
                 <a href="https://www.linkedin.com/in/amira-dif-605574191/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700" title="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
@@ -56,11 +46,9 @@
                 </a>
             </div>
 
-            <!-- Bouton Contact -->
             <a href="mailto:amiradif40@gmail.com" class="hidden md:inline-block bg-blue-700 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 transition duration-150 shadow-sm">
                 Contactez-moi
             </a>
-            <!-- Menu Burger (pour mobile) -->
             <div class="md:hidden">
                  <a href="mailto:amiradif40@gmail.com" class="bg-blue-700 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 transition duration-150 shadow-sm">
                     Contact
@@ -69,10 +57,7 @@
         </div>
     </nav>
 
-    <!-- ========== SECTION HÉROS ========== -->
-    <!-- Utilisation de l'image de couverture comme fond -->
     <header class="hero-bg relative">
-        <!-- Overlay sombre pour la lisibilité du texte -->
         <div class="absolute inset-0 bg-black opacity-60"></div>
         
         <div class="max-w-6xl mx-auto px-4 py-32 md:py-48 text-center relative z-10">
@@ -82,39 +67,32 @@
             <p class="mt-4 text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
                 Spécialisée en Machine Learning / Deep Learning, je transforme les données complexes en solutions innovantes.
             </p>
+            <p class="mt-6 text-lg font-medium text-blue-300 animate-pulse">
+                Recherche active de nouvelles opportunités (Freelance ou CDI)
+            </p>
             <div class="mt-8 flex justify-center gap-4">
                 <a href="#projets" class="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-blue-800 transition duration-150 shadow-lg">
                     Voir mes Projets
                 </a>
-                <a href="mailto:amiradif40@gmail.com" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-gray-300 transition duration-150">
+                <a href="#contact" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-gray-300 transition duration-150">
                     Contacter
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- ========== CONTENU PRINCIPAL ========== -->
     <main class="max-w-6xl mx-auto px-4 py-16">
 
-        <!-- ========== SECTION PROFIL ========== -->
         <section id="profil" class="mb-16">
-            <!-- Changement en grid pour inclure la photo -->
             <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg grid md:grid-cols-3 gap-8 md:gap-12 items-center">
                 
-                <!-- Colonne Photo -->
                 <div class="md:col-span-1 flex justify-center">
-                    <!-- 
-                      IMPORTANT: 
-                      Remplacez 'amiradif.jpg' par le nom du fichier que vous téléversez sur GitHub.
-                    -->
                     <img src="amiradif.jpg" alt="Photo de profil de Amira Dif" class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-blue-100 shadow-md">
                 </div>
 
-                <!-- Colonne Texte -->
                 <div class="md:col-span-2">
                     <h2 class="text-3xl font-bold text-blue-800 mb-6">Mon Profil</h2>
                     <p class="text-lg text-gray-700 leading-relaxed">
-                        <!-- Texte copié de votre CV -->
                         Ingénieure diplômée en Signal, Image et Apprentissage Automatique (SIA2), je recherche un poste me permettant de mettre en pratique mes compétences en traitement d'image, traitement du signal et apprentissage automatique.
                         Passionnée par l'innovation, je suis particulièrement motivée par les projets liés à l'analyse d'images et de signaux, à la reconnaissance d'objets, à l'amélioration de la qualité d'image et à la vision par ordinateur.
                     </p>
@@ -122,15 +100,12 @@
             </div>
         </section>
 
-        <!-- ========== SECTION PROJETS (PORTFOLIO) ========== -->
         <section id="projets" class="mb-16">
             <h2 class="text-3xl font-bold text-blue-800 mb-8 text-center">Projets Récents</h2>
             
             <div class="grid md:grid-cols-2 gap-8">
 
-                <!-- Projet 1: Stage Vision 3D (Segula) -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl">
-                    <!-- Image du projet (Placeholder) -->
                     <img src="https://placehold.co/600x400/00416A/white?text=Vision+3D" alt="Projet Vision 3D" class="w-full h-48 object-cover">
                     <div class="p-8">
                         <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Stage</span>
@@ -147,9 +122,7 @@
                     </div>
                 </div>
 
-                <!-- Projet 2: Logiciel Traitement d'Image (C++) -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl">
-                    <!-- Image du projet (Placeholder) -->
                     <img src="https://placehold.co/600x400/2c3e50/white?text=C%2B%2B+%2F+Qt" alt="Projet C++ Qt" class="w-full h-48 object-cover">
                     <div class="p-8">
                         <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Projet Académique</span>
@@ -167,9 +140,7 @@
                     </div>
                 </div>
 
-                <!-- Projet 3: Stage IA Segmentation Hyperspectrale (CNRS) -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl">
-                    <!-- Image du projet (Placeholder) -->
                     <img src="https://placehold.co/600x400/16a085/white?text=IA+%26+PyTorch" alt="Projet IA PyTorch" class="w-full h-48 object-cover">
                     <div class="p-8">
                         <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Stage</span>
@@ -187,9 +158,7 @@
                     </div>
                 </div>
 
-                <!-- Projet 4: PFE Panneaux Photovoltaïques (PID Neuronal) -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl">
-                    <!-- Image du projet (Placeholder) -->
                     <img src="https://placehold.co/600x400/f39c12/white?text=MATLAB+%26+Simulink" alt="Projet MATLAB" class="w-full h-48 object-cover">
                     <div class="p-8">
                         <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Projet de Fin d'Études</span>
@@ -210,40 +179,69 @@
             </div>
         </section>
 
-        <!-- ========== SECTION COMPÉTENCES ========== -->
         <section id="competences" class="mb-16">
             <h2 class="text-3xl font-bold text-blue-800 mb-8 text-center">Compétences Techniques</h2>
-            <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
                 <div class="mb-6">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Langages de Programmation</h4>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Langages & Frameworks</h4>
                     <div class="flex flex-wrap gap-3">
                         <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">Python</span>
+                        <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">PyTorch</span>
+                        <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">OpenCV</span>
                         <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">C++</span>
+                        <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">Qt Creator</span>
                         <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">MATLAB / Simulink</span>
                         <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">C</span>
-                        <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">Ladder</span>
-                        <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-lg">Latex</span>
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Logiciels & Frameworks</h4>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Logiciels & Outils</h4>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">PyTorch</span>
-                        <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">OpenCV</span>
-                        <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">Qt Creator</span>
                         <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">Arduino</span>
                         <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">LabVIEW</span>
                         <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">TIA Portal</span>
                         <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">SolidWorks</span>
                         <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">Visual Studio / VS Code</span>
+                        <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">Latex</span>
+                        <span class="bg-gray-200 text-gray-700 text-lg font-medium px-4 py-2 rounded-lg">Ladder</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+            <h2 class="text-3xl font-bold text-blue-800 mb-8 text-center">Contactez-moi</h2>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                <p class="text-center text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Je suis toujours ouverte à de nouvelles opportunités de projets, missions freelance ou collaborations. N'hésitez pas à me contacter.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    
+                    <a href="mailto:amiradif40@gmail.com" class="block p-8 bg-blue-50 rounded-lg transition-transform transform hover:scale-105 hover:bg-blue-100 shadow-sm">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-700"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-semibold text-gray-800">Par Email</h4>
+                                <p class="text-gray-600 text-lg">amiradif40@gmail.com</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+33767461007" class="block p-8 bg-gray-50 rounded-lg transition-transform transform hover:scale-105 hover:bg-gray-100 shadow-sm">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-semibold text-gray-800">Par Téléphone</h4>
+                                <p class="text-gray-600 text-lg">07 67 46 10 07</p> 
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- ========== FOOTER ========== -->
     <footer class="bg-gray-800 text-gray-300">
         <div class="max-w-6xl mx-auto px-4 py-10 text-center">
             <p class="text-lg font-medium mb-4">Prête à démarrer un projet ?</p>
@@ -251,7 +249,6 @@
                 Contactez-moi par Email
             </a>
             
-            <!-- Liens sociaux Footer -->
             <div class="flex justify-center space-x-6 mt-8">
                 <a href="https://www.linkedin.com/in/amira-dif-605574191/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white" title="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -270,6 +267,4 @@
 
 </body>
 </html>
-
-
 
